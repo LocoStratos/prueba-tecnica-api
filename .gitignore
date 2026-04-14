@@ -1,0 +1,26 @@
+#Python
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+
+#Entornos virtuales
+venv/
+env/
+.venv/
+
+#Archivos de sistema
+.DS_Store
+Thumbs.db
+
+#Logs
+*.log
+
+#Archivos de configuración local
+.env
+
+#VS Code
+.vscode/
+
+#PyCharm
+.idea/
