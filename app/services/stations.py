@@ -79,10 +79,7 @@ def search_stations(lat, lng, product, nearest, store, cheapest):
             brand = BRANDS.get(station.get("marca"), f"Marca ID {station.get('marca')}")
             stations.append({
                 "id": str(station["id"]),
-                #"id": station["id"],
                 "compania": brand,
-                #"compania": BRANDS.get(station.get("marca"), "Desconocida"),
-                #"compania": str(station.get("marca")),
                 #"compania": station["marca"], de esta manera me los devolvia por el id y no por el nombre.
                 "direccion": station["direccion"],
                 "comuna": station["comuna"],
@@ -90,9 +87,6 @@ def search_stations(lat, lng, product, nearest, store, cheapest):
                 "latitud": station_lat,
                 "longitud": station_lng,
                 "distancia(lineal)": round(distance, 3),
-                #"distancia": round(distance, 3),
-                #"distancia": distance,
-                #"precio": price,
                 f"precios{product_name}": price,
                 "tienda": tienda_info,
                 "tiene_tienda": has_store,
